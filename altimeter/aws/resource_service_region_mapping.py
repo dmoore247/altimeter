@@ -51,10 +51,10 @@ class AWSResourceRegionMappingRepository(BaseModel):
                 )
             else:
                 regions = prefiltered_regions
-            if not regions:
-                raise NoRegionsFoundForResource(
-                    f"No regions found for resource {service}/{resource}"
-                )
+            #if not regions:
+            #    raise NoRegionsFoundForResource(
+            #        f"No regions found for resource {service}/{resource}"
+            #    )
             logger.info(
                 event=AWSLogEvents.GetServiceResourceRegionMappingEnd,
                 prefiltered_regions=prefiltered_regions,
