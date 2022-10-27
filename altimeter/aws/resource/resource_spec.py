@@ -16,7 +16,7 @@ from altimeter.core.resource.resource import Resource
 from altimeter.core.resource.resource_spec import ResourceSpec
 
 AWS_API_IGNORE_ERRORS = frozenset(
-    ("NotSignedUp", "OptInRequired", "SubscriptionRequiredException", "InvalidAction")
+    ("NotSignedUp", "OptInRequired", "SubscriptionRequiredException", "InvalidAction", "AccessDeniedException")
 )
 
 
