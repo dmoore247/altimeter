@@ -1,6 +1,6 @@
 # Databricks notebook source
 # MAGIC %md # Altimeter
-# MAGIC ## Turn AWS resources into RDFs
+# MAGIC ## Turn AWS resource definitions into RDFs
 # MAGIC https://github.com/tableau/altimeter
 # MAGIC 
 # MAGIC Document the setup and running `altimiter` on a Databricks cluster
@@ -33,11 +33,7 @@
 # COMMAND ----------
 
 # MAGIC %sh
-# MAGIC zcat /tmp/altimeter_single_account/20221027/1666897012/6c2e70a0-d688-4872-908c-21813f883a2f/master.rdf.gz
-
-# COMMAND ----------
-
-import kglab
+# MAGIC zcat `tail -1 bin/log.txt` | head -300
 
 # COMMAND ----------
 
